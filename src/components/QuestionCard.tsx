@@ -28,7 +28,7 @@ const QuestionCard: React.FC<Props> = ({question, answers, callback, userAnswer,
 
     >
 <button disabled={userAnswer ? true : false} value={answer} onClick={callback}>
-    <span dangerouslySetInnerHTML={{ __html: answer}} />
+    .<span dangerouslySetInnerHTML={{ __html: answer}} />.
 </button>
     </ButtonWrapper>
 

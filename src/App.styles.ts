@@ -34,7 +34,8 @@ align-items: center;
 }
 
 .score{
-    color: White;
+    color: white;
+    text-shadow: 4px 5px 5px black;
     font-size: 4rem;
     margin: 0;
 }
@@ -76,6 +77,7 @@ font-size:1.8rem;
 
 .start{
     max-width:200px;
+
 }
 
 

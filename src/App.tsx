@@ -31,7 +31,7 @@ const startQuiz = async () => {
  setLoading(true)
  setGameOver(false)
 
- const newQuestions = await fetchQuizQuestions(TOTAL_QUESTIONS, Difficulty.MEDIUM);
+ const newQuestions = await fetchQuizQuestions(TOTAL_QUESTIONS, Difficulty.EASY);
  setQuestions(newQuestions);
  setScore(0);
  setUserAnswers([]);
