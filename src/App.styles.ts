@@ -1,7 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-//@ts-ignore
-// import BgImages from './video/vidone.mp4';
-import BgImages from './Img/doll.jpg';
+import styled, { createGlobalStyle } from "styled-components";
+import BgImages from "./Img/doll.jpg";
 
 export const MyStyle = createGlobalStyle`
 html{
@@ -62,7 +60,7 @@ h1{
 .start, .next {
     cursor: pointer;
     color: white;
-font-size:1.8rem;
+    font-size:1.8rem;
     background: linear-gradient(180deg,
 #603813,
 #b29f94);
