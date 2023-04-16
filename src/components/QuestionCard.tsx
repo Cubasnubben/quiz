@@ -2,6 +2,8 @@ import React from "react";
 import { AnswerObject } from "../App";
 import { Wrappers, ButtonWrapper } from "./QuestionCard.style";
 
+// dangerouslySetInnerHTML för att få texten korrekt ist för att importera decode() html-entities
+
 type Props = {
   question: string;
   answers: string[];
@@ -20,7 +22,7 @@ const QuestionCard: React.FC<Props> = ({
   totalQuestions,
 }) => (
   <Wrappers>
-    <p className="number">
+    <p>
       Fråga: {questionNr} / {totalQuestions}
     </p>
     <p dangerouslySetInnerHTML={{ __html: question }} />
@@ -37,7 +39,7 @@ const QuestionCard: React.FC<Props> = ({
             value={answer}
             onClick={callback}
           >
-            {answer}
+            <span dangerouslySetInnerHTML={{ __html: answer }} />.
           </button>
         </ButtonWrapper>
       ))}

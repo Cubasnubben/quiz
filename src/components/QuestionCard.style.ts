@@ -8,6 +8,7 @@ export const Wrappers = styled.div`
   padding: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.85);
   text-align: center;
+  opacity: 0.9;
 
   p {
     font-size: 1.6rem;
